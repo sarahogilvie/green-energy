@@ -1,0 +1,333 @@
+/*
+COLOUR SCHEME:
+Main Green - #5ECC58;
+Warm Green Dark - #75B54A;
+Warm Green Light - #ADCC53;
+Cool Green Dark - #4AB564;
+Cool Green Light - #53CC93;
+*/
+
+
+/*GOOGLE FONTS*/
+
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Source+Sans+Pro');
+
+/*MOBILE*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    font-size: 0.618rem;
+    line-height: 1.5;
+    color: #444;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Merriweather', 'Times New Roman', serif;
+}
+
+h3 {
+    padding: 0;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.logo {
+    text-align: center;
+    padding: 2rem;
+    color: #5ECC58;
+}
+
+.masthead-bg {
+    padding: 5% 0;
+    background-color: #4AB564;
+}
+
+.mh-image {
+    transition: opacity 1s ease-out;
+}
+
+#tag-line {
+    color: #888;
+    transition: all 500ms ease-out;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.box {
+    max-width: 60rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+figure {
+    margin: 0;
+    padding: 0;
+}
+
+figcaption {
+    margin: 0.5rem 0 0 0;
+}
+
+img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+
+/*navigation*/
+
+.nav-bg li {
+    display: inline;
+}
+
+.nav-bg li a {
+    display: block;
+    padding: 1rem;
+    border: 1px solid #DDD;
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-bg li a:link {
+    background-color: #5ECC58;
+}
+
+.nav-bg li a:hover {
+    background-color: #53CC93;
+}
+
+.nav-bg li a:active {
+    background-color: #4AB564;
+}
+
+.mh-image figure img {
+    width: 50rem;
+}
+
+
+/*main-content*/
+
+.main-content-bg .box p {
+    text-align: left;
+}
+
+.main-content-bg span a {
+    font-size: 0;
+}
+
+.main-content-bg span a.wind:after {
+    font-family: FontAwesome;
+    font-size: 50px;
+    display: inline-block;
+    content: '\f1d8';
+}
+
+.main-content-bg span a.sun:after {
+    font-family: FontAwesome;
+    font-size: 50px;
+    display: inline-block;
+    content: '\f185';
+}
+
+.main-content-bg span a.water:after {
+    font-family: FontAwesome;
+    font-size: 50px;
+    display: inline-block;
+    content: '\f043';
+}
+
+.main-content-bg span {
+    width: calc(33.33% - 1rem + 0.33rem);
+    float: left;
+    margin: 0.3rem;
+    padding-bottom: 2rem;
+}
+
+.active {
+    color: yellow;
+}
+
+.container {
+    clear: both;
+}
+
+.container figure img {
+    width: 20rem;
+}
+
+.container figcaption {
+    width: 20rem;
+}
+
+
+/*footer*/
+
+footer {
+    background-color: #4AB564;
+}
+
+.footer-bg .box {
+    border-top: 1px solid #4AB564;
+}
+
+.footer-bg li {
+    display: inline;
+}
+
+.footer-bg li a {
+    display: inline-block;
+    padding: 1rem;
+    border: 1px solid #4AB564;
+    margin: 0 0.5rem 0 0;
+}
+
+.footer-bg li:last-child a {
+    margin: 0;
+}
+
+.social-media li a:link {
+    color: #5ECC58;
+}
+
+.social-media li a:visited {
+    color: #5ECC58;
+}
+
+.social-media li a:hover {
+    color: #53CC93;
+}
+
+.social-media li a:active {
+    color: #4AB564;
+}
+
+.contact {
+    color: #ffffff;
+}
+
+.copyright {
+    color: #5ECC58;
+}
+
+hr {
+    border: 1px solid #5ECC58;
+}
+
+
+/*TABLET*/
+
+@media screen and (min-width: 35rem) {
+    body {
+        font-size: 1rem;
+    }
+    .box {
+        margin: 2rem;
+    }
+    /*adjusting nav*/
+    .nav-bg li a {
+        width: calc(33.33% - 1rem + 0.33rem);
+        float: left;
+        margin: 0 1rem 0 0;
+    }
+    .nav-bg li:last-child a {
+        margin: 0;
+    }
+    .masthead-bg {
+        clear: both;
+        width: 100%
+    }
+    .mh-image {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+    .main-content-bg {
+        clear: both;
+    }
+    .btn {
+        width: 50%;
+    }
+    .container figure img {
+        display: block;
+        width: 50%;
+        float: left;
+    }
+    .container figure figcaption {
+        display: block;
+        width: 50%;
+        float: left;
+        padding-left: 1rem;
+    }
+    /*adjusting image*/
+    .container figure {
+        margin: 0 1rem 0 0;
+    }
+    figcaption {
+        text-align: left;
+    }
+    .contact {
+        text-align: left;
+    }
+}
+
+
+/*DESKTOP*/
+
+@media screen and (min-width: 60rem) {
+    body {
+        font-size: 1.618rem;
+    }
+    .box {
+        font-size: 1.618rem;
+        margin: 2rem auto;
+    }
+    .logo {
+        text-align: left;
+    }
+    .masthead-bg {
+        padding: 1% 0;
+    }
+    /*adjusting nav*/
+    .nav-bg li a {
+        width: calc(33.33% - 1rem + 0.33rem);
+        margin: 0 1rem 0 0;
+    }
+    .nav-bg li:last-child a {
+        margin: 0;
+    }
+    .container figure img {
+        display: block;
+        width: 30%;
+        float: left;
+    }
+    .container figure figcaption {
+        display: block;
+        width: 70%;
+        float: left;
+        padding-left: 1rem;
+    }
+    .footer-bg .box {
+        text-align: left;
+    }
+}
